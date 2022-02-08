@@ -16,35 +16,54 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nHi-Sy-Ji3">
-                                <rect key="frame" x="145" y="507" width="125" height="31"/>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="arD-PC-18P">
+                                <rect key="frame" x="49" y="431" width="317" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h1Y-vQ-YfQ">
+                                <rect key="frame" x="326" y="437" width="30" height="22"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="doc" catalog="system"/>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Password Generator" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bh9-gT-ycH">
+                                <rect key="frame" x="107" y="106" width="200" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nHi-Sy-Ji3">
+                                <rect key="frame" x="122" y="561" width="170" height="31"/>
                                 <color key="tintColor" systemColor="labelColor"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Create" cornerStyle="capsule"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Generate Password" cornerStyle="capsule"/>
                                 <connections>
                                     <action selector="onChangeTextButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="We3-oL-9pi"/>
                                     <action selector="toggleBoldface:" destination="arD-PC-18P" eventType="touchUpInside" id="tnY-a7-inl"/>
                                 </connections>
                             </button>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="arD-PC-18P">
-                                <rect key="frame" x="49" y="252" width="317" height="34"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="nHi-Sy-Ji3" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="145" id="Hbc-zs-e6e"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="nHi-Sy-Ji3" secondAttribute="bottom" constant="324" id="Iki-Pf-vDJ"/>
-                            <constraint firstItem="arD-PC-18P" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="208" id="Z5g-NT-Ny6"/>
-                            <constraint firstItem="arD-PC-18P" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="49" id="aSg-q5-D5n"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="nHi-Sy-Ji3" secondAttribute="trailing" constant="144" id="mBS-g1-s7g"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="arD-PC-18P" secondAttribute="trailing" constant="48" id="pbt-yT-gEo"/>
+                            <constraint firstItem="h1Y-vQ-YfQ" firstAttribute="centerY" secondItem="arD-PC-18P" secondAttribute="centerY" id="82S-MM-yBn"/>
+                            <constraint firstItem="Bh9-gT-ycH" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="107" id="GaC-CB-5hh"/>
+                            <constraint firstItem="arD-PC-18P" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="49" id="J1O-Ci-PGi"/>
+                            <constraint firstItem="h1Y-vQ-YfQ" firstAttribute="leading" secondItem="arD-PC-18P" secondAttribute="trailing" constant="-40" id="Oaw-6y-RqI"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Bh9-gT-ycH" secondAttribute="trailing" constant="107" id="Pnk-gE-J6W"/>
+                            <constraint firstItem="Bh9-gT-ycH" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="62" id="RTq-X6-DNE"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="arD-PC-18P" secondAttribute="trailing" constant="48" id="YXD-b6-IQZ"/>
+                            <constraint firstItem="h1Y-vQ-YfQ" firstAttribute="top" secondItem="arD-PC-18P" secondAttribute="top" id="YjA-9d-nUK"/>
+                            <constraint firstItem="nHi-Sy-Ji3" firstAttribute="centerX" secondItem="arD-PC-18P" secondAttribute="centerX" id="ZkL-mJ-RTu"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="arD-PC-18P" secondAttribute="bottom" constant="397" id="tAV-bC-rLr"/>
+                            <constraint firstItem="nHi-Sy-Ji3" firstAttribute="top" secondItem="arD-PC-18P" secondAttribute="bottom" constant="96" id="vzw-S1-lJg"/>
+                            <constraint firstItem="h1Y-vQ-YfQ" firstAttribute="bottom" secondItem="arD-PC-18P" secondAttribute="bottom" id="ymM-rJ-nry"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="CopyButton" destination="h1Y-vQ-YfQ" id="9kt-NI-9Ha"/>
                         <outlet property="CreateButton" destination="nHi-Sy-Ji3" id="zXw-bP-Xuo"/>
+                        <outlet property="TitleLabel" destination="Bh9-gT-ycH" id="K9i-It-tpQ"/>
                         <outlet property="textView" destination="arD-PC-18P" id="30J-4f-6Lk"/>
                     </connections>
                 </viewController>
@@ -54,6 +73,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="doc" catalog="system" width="115" height="128"/>
         <systemColor name="labelColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
