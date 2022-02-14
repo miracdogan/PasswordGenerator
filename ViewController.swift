@@ -12,6 +12,8 @@ class ViewController: UIViewController {
     @IBOutlet var CopyButton: UIButton!
     @IBOutlet var textView: UITextField!
     @IBOutlet var TitleLabel: UILabel!
+    @IBOutlet var SliderLabel: UILabel!
+    @IBOutlet var Slider: UISlider!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -37,6 +39,13 @@ class ViewController: UIViewController {
         return password
         
     }
+
+    @IBAction func sliderValueChange(_ sender: UISlider)
+    {
+        let currentValue = Int(sender.value)
+        SliderLabel.text = "\(currentValue)"
+    }
+    
     
     @IBAction func onChangeTextButton(_ CreateButton: UIButton)
     {
@@ -45,7 +54,9 @@ class ViewController: UIViewController {
         UIPasteboard.general.string = textView.text
         
     }
-
+    
+   
+    
 //    @IBAction func copyPassword(_ CopyButton: UIButton)
 //    {
 //        UIPasteboard.general.string = textView.text

@@ -42,11 +42,29 @@
                                     <action selector="toggleBoldface:" destination="arD-PC-18P" eventType="touchUpInside" id="tnY-a7-inl"/>
                                 </connections>
                             </button>
+                            <slider opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="20" translatesAutoresizingMaskIntoConstraints="NO" id="0oO-6D-SkQ">
+                                <rect key="frame" x="105" y="518" width="204" height="30"/>
+                                <connections>
+                                    <action selector="sliderValueChange:" destination="BYZ-38-t0r" eventType="valueChanged" id="5O2-Sd-yKK"/>
+                                </connections>
+                            </slider>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="raP-4u-2aW">
+                                <rect key="frame" x="200" y="494" width="14" height="16"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="raP-4u-2aW" firstAttribute="top" secondItem="arD-PC-18P" secondAttribute="bottom" constant="20" id="4Vk-1n-6n5"/>
+                            <constraint firstItem="nHi-Sy-Ji3" firstAttribute="firstBaseline" secondItem="0oO-6D-SkQ" secondAttribute="baseline" constant="28.5" symbolType="layoutAnchor" id="6Qu-wP-Mcs"/>
+                            <constraint firstItem="raP-4u-2aW" firstAttribute="centerX" secondItem="arD-PC-18P" secondAttribute="centerX" id="7FD-b7-z2i"/>
                             <constraint firstItem="h1Y-vQ-YfQ" firstAttribute="centerY" secondItem="arD-PC-18P" secondAttribute="centerY" id="82S-MM-yBn"/>
+                            <constraint firstItem="0oO-6D-SkQ" firstAttribute="leading" secondItem="arD-PC-18P" secondAttribute="leading" id="FIt-Pt-EPP"/>
+                            <constraint firstItem="0oO-6D-SkQ" firstAttribute="centerX" secondItem="nHi-Sy-Ji3" secondAttribute="centerX" id="GHJ-DT-awg"/>
+                            <constraint firstItem="0oO-6D-SkQ" firstAttribute="top" secondItem="arD-PC-18P" secondAttribute="bottom" constant="43" id="GU8-gK-uRA"/>
                             <constraint firstItem="Bh9-gT-ycH" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="107" id="GaC-CB-5hh"/>
                             <constraint firstItem="arD-PC-18P" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="49" id="J1O-Ci-PGi"/>
                             <constraint firstItem="h1Y-vQ-YfQ" firstAttribute="leading" secondItem="arD-PC-18P" secondAttribute="trailing" constant="-40" id="Oaw-6y-RqI"/>
@@ -54,7 +72,9 @@
                             <constraint firstItem="Bh9-gT-ycH" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="62" id="RTq-X6-DNE"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="arD-PC-18P" secondAttribute="trailing" constant="48" id="YXD-b6-IQZ"/>
                             <constraint firstItem="h1Y-vQ-YfQ" firstAttribute="top" secondItem="arD-PC-18P" secondAttribute="top" id="YjA-9d-nUK"/>
+                            <constraint firstItem="0oO-6D-SkQ" firstAttribute="firstBaseline" secondItem="arD-PC-18P" secondAttribute="baseline" constant="11" symbolType="layoutAnchor" id="YyY-Pd-zy5"/>
                             <constraint firstItem="nHi-Sy-Ji3" firstAttribute="centerX" secondItem="arD-PC-18P" secondAttribute="centerX" id="ZkL-mJ-RTu"/>
+                            <constraint firstItem="nHi-Sy-Ji3" firstAttribute="top" secondItem="0oO-6D-SkQ" secondAttribute="bottom" constant="23" id="hCy-kB-e1C"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="arD-PC-18P" secondAttribute="bottom" constant="397" id="tAV-bC-rLr"/>
                             <constraint firstItem="nHi-Sy-Ji3" firstAttribute="top" secondItem="arD-PC-18P" secondAttribute="bottom" constant="96" id="vzw-S1-lJg"/>
                             <constraint firstItem="h1Y-vQ-YfQ" firstAttribute="bottom" secondItem="arD-PC-18P" secondAttribute="bottom" id="ymM-rJ-nry"/>
@@ -63,7 +83,11 @@
                     <connections>
                         <outlet property="CopyButton" destination="h1Y-vQ-YfQ" id="9kt-NI-9Ha"/>
                         <outlet property="CreateButton" destination="nHi-Sy-Ji3" id="zXw-bP-Xuo"/>
+                        <outlet property="Slider" destination="0oO-6D-SkQ" id="6PZ-Ca-ySV"/>
+                        <outlet property="SliderLabel" destination="raP-4u-2aW" id="p1u-Fd-fSY"/>
                         <outlet property="TitleLabel" destination="Bh9-gT-ycH" id="K9i-It-tpQ"/>
+                        <outlet property="salesPriceSlider" destination="0oO-6D-SkQ" id="IAB-6D-9Wf"/>
+                        <outlet property="sliderValueForFunction" destination="0oO-6D-SkQ" id="lJy-37-dVn"/>
                         <outlet property="textView" destination="arD-PC-18P" id="30J-4f-6Lk"/>
                     </connections>
                 </viewController>
